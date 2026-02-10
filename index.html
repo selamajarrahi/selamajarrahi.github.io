@@ -1,23 +1,227 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selamajarrahi</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --card: #141414;
+      --border: #262626;
+      --text: #fafafa;
+      --muted: #a1a1aa;
+      --accent: #3b82f6;
+      --accent-hover: #60a5fa;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 2px solid var(--border);
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+    .link-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .link-icon {
+      font-size: 1.5rem;
+      width: 40px;
+      text-align: center;
+    }
+    .link-content {
+      flex: 1;
+    }
+    .link-title {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .link-desc {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .link-arrow {
+      color: var(--muted);
+      font-size: 1.25rem;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .stat-label {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-top: 0.25rem;
+    }
+    footer {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 480px) {
+      body { padding: 1.5rem 1rem; }
+      .stat-value { font-size: 1.5rem; }
+    }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h1&gt; Hello world &lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt; I’m hosted with Github pages &lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+  <div class="container">
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/89251912?v=4" alt="Avatar" class="avatar">
+      <h1>selamajarrahi</h1>
+      <p class="tagline">Building things. Learning constantly.</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">🔗 Links</h2>
+      <div class="links">
+        <a href="https://selamajarrahi.github.io/reading-list/" class="link-card">
+          <span class="link-icon">📚</span>
+          <div class="link-content">
+            <div class="link-title">Reading List</div>
+            <div class="link-desc">Articles I'm saving to read</div>
+          </div>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://github.com/selamajarrahi" class="link-card">
+          <span class="link-icon">💻</span>
+          <div class="link-content">
+            <div class="link-title">GitHub</div>
+            <div class="link-desc">Code & projects</div>
+          </div>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">📊 2026 Progress</h2>
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-value" id="wins">5</div>
+          <div class="stat-label">Career Wins</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="articles">3</div>
+          <div class="stat-label">Articles Saved</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="days">41</div>
+          <div class="stat-label">Days in 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">🚀 Coming Soon</h2>
+      <div class="links">
+        <div class="link-card" style="opacity: 0.6; cursor: default;">
+          <span class="link-icon">📝</span>
+          <div class="link-content">
+            <div class="link-title">Blog</div>
+            <div class="link-desc">Thoughts & learnings</div>
+          </div>
+        </div>
+        <div class="link-card" style="opacity: 0.6; cursor: default;">
+          <span class="link-icon">🧪</span>
+          <div class="link-content">
+            <div class="link-title">Skill Incubator</div>
+            <div class="link-desc">OpenClaw skill experiments</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Powered by <a href="https://github.com/openclaw/openclaw">OpenClaw</a> 🦞</p>
+    </footer>
+  </div>
+
+  <script>
+    // Calculate days into 2026
+    const now = new Date();
+    const start = new Date('2026-01-01');
+    const days = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1;
+    document.getElementById('days').textContent = days;
+  </script>
 </body>
 </html>
